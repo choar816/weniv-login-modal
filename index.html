@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="app">
+        <header id="header">
+            <h1>로그인 또는 회원가입</h1>
+            <button class="topbar-close" type="button"></button>
+        </header>
+        
+        <section class="sect__login-id">
+            <h6 class="sr-only">아이디 로그인 파트</h6>
+            <h2>위니브에서 여러분의 궁금증을 해결하세요! :)</h2>
+            <form class="form__login-id" action="">
+                <input class="input__id" type="text" placeholder="아이디" required>
+                <input class="input__pw" type="password" placeholder="비밀번호">
+                <input type="checkbox" name="check__keep" id="check__keep">
+                <label for="check__keep">로그인 상태 유지</label>
+                <button class="btn__login-id">로그인</button>
+            </form>
+            <a class="link__join" href="#none">회원가입</a>
+            <a class="link__lost" href="#none">아이디/비밀번호 찾기</a>
+        </section>
+
+        <section class="sect__login-sns">
+            <h6 class="sr-only">SNS 로그인 파트</h6>
+            <p class="divider">또는</p>
+            <button class="btn__login-google">구글 계정으로 로그인</button>
+            <button class="btn__login-facebook">페이스북 계정으로 로그인</button>
+            <button class="btn__login-naver">네이버 계정으로 로그인</button>
+            <button class="btn__login-kakao">카카오톡 계정으로 로그인</button>
+        </section>
+    </main>
+</body>
+</html>

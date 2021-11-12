@@ -1,0 +1,70 @@
+/* util */
+.sr-only {
+
+}
+
+/* style */
+body {
+    margin: 0;
+    background-color: #eee;
+}
+
+#app {
+    margin: 20px;
+
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.05);
+}
+
+#header {
+    padding: 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+#header h1 {
+    margin: 20px 0 18px 0;
+
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.topbar-close {
+    position: absolute;
+    top: 42px;
+    right: 44px;
+    width: 16px;
+    height: 16px;
+    background-image: url(./img/close.png);
+    background-size: 16px 16px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sect__login-id, .sect__login-sns {
+    padding: 0 24px;
+}
+
+.sect__login-id h2 {
+
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form__login-id .input__id, .form__login-id .input__pw {
+    display: block;
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.sect__login-sns button {
+    display: block;
+}
