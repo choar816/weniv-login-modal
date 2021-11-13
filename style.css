@@ -1,12 +1,25 @@
 /* util */
 .sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
+@font-face {
+    font-family: 'Apoqa Han Sans';
+    src: url('./font/SpoqaHanSansNeo-Light.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* style */
 body {
     margin: 0;
     background-color: #eee;
+    font-family: 'Apoqa Han Sans';
 }
 
 #app {
@@ -35,13 +48,13 @@ body {
     line-height: 20px;
 }
 
-.topbar-close {
+.btn__close {
     position: absolute;
     top: 42px;
     right: 44px;
     width: 16px;
     height: 16px;
-    background-image: url(./img/close.png);
+    background-image: url('./img/close.png');
     background-size: 16px 16px;
     background-color: #fff;
     border: none;
@@ -53,18 +66,173 @@ body {
 }
 
 .sect__login-id h2 {
-
+    margin: 26px 0 24px;
     font-size: 20px;
     line-height: 24px;
 }
 
 .form__login-id .input__id, .form__login-id .input__pw {
     display: block;
+    box-sizing: border-box;
     width: 100%;
+    height: 50px;
+    padding: 15px 16px;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
+    font-size: 16px;
+}
+
+.form__login-id .input__id {
+    margin-bottom: 10px;
+}
+
+#check__keep {
+    margin: 16px 8px 20px 4px;
+}
+
+.label__check-keep {
+    color: #767676;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.btn__login-id {
+    margin-bottom: 20px;
+
+    display: block;
+    padding: 14px 0;
+    width: 100%;
+    background-color: #2F80ED;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.cont__links {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.link__join, .link__lost {
+    color: #767676;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link__join::after {
+    display: inline-block;
+    padding: 0 12px;
+    content: '|';
+    font-size: 14px;
+    line-height: 18px;
+    color: #767676;
+    cursor: default;
+}
+
+.divider {
+    margin-bottom: 29px;
+
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+.divider::after {
+    position: absolute;
+    content: '또는';
+    padding: 0 13px;
+    width: 26px;
+    height: 18px;
+    top: -50%;
+    left: 50%;
+    margin: -9px 0 0 -13px;
+    color: #767676;
+    font-size: 14px;
+    line-height: 18px; 
+    background-color: #fff;
 }
 
 .sect__login-sns button {
+    margin-bottom: 10px;
+    
+    position: relative;
     display: block;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #767676;
+    font-size: 16px;
+    line-height: 20px;
 }
+
+.sect__login-sns .btn__login-google::before {
+    position: absolute;
+    top:50%;
+    left:12px;
+    margin-top: -14px;
+    display: inline-block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url('./img/google.png');
+    background-size: 28px 28px;
+}
+
+.sect__login-sns .btn__login-facebook {
+    border: 1px solid #2D9CDB;
+}
+
+.sect__login-sns .btn__login-facebook::before {
+    position: absolute;
+    top:50%;
+    left:12px;
+    margin-top: -14px;
+    display: inline-block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url('./img/facebook.png');
+    background-size: 28px 28px;
+}
+
+.sect__login-sns .btn__login-naver {
+    border: 1px solid #00BF18
+}
+.sect__login-sns .btn__login-naver::before {
+    position: absolute;
+    top:50%;
+    left:12px;
+    margin-top: -14px;
+    display: inline-block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url('./img/naver.png');
+    background-size: 28px 28px;
+}
+
+.sect__login-sns .btn__login-kakao {
+    margin-bottom: 25px;
+    border: 1px solid #F2C94C
+} 
+.sect__login-sns .btn__login-kakao::before {
+    position: absolute;
+    top:50%;
+    left:12px;
+    margin-top: -14px;
+    display: inline-block;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background-image: url('./img/kakao.png');
+    background-size: 28px 28px;
+} 
