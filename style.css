@@ -85,15 +85,57 @@ body {
 .form__login-id .input__id {
     margin-bottom: 10px;
 }
-
-#check__keep {
-    margin: 16px 8px 20px 4px;
+.form__login-id .input__pw {
+    margin-bottom: 17px;
 }
 
-.label__check-keep {
+#checkbox__keep {
+    position: relative;
+    left: -5px;
+}
+#checkbox__keep:before {
+    position: relative;
+    display: block;
+    top: -4px;
+    left: -6px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    content: "";
+    background-color: #fff;
+    background-image: url("./img/check-no.png");
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#checkbox__keep:checked:before {
+    position: relative;
+    display: block;
+    top: -4px;
+    left: -6px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    content: "";
+    background-image: url("./img/check-yes.png");
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.label__check-keep-login {
+    margin: 0 0 21px 10px;
+
+    display: inline-block;
     color: #767676;
     font-size: 14px;
     line-height: 18px;
+}
+
+.span__checked {
+    background-image: url('./img/check-yes.png');
+    background-size: 22px 22px;
 }
 
 .btn__login-id {
@@ -144,13 +186,14 @@ body {
 }
 .divider::after {
     position: absolute;
-    content: '또는';
+    top: -50%;
+    left: 50%;
+    margin: -9px 0 0 -26px;
+
     padding: 0 13px;
     width: 26px;
     height: 18px;
-    top: -50%;
-    left: 50%;
-    margin: -9px 0 0 -13px;
+    content: '또는';
     color: #767676;
     font-size: 14px;
     line-height: 18px; 
