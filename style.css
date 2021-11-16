@@ -18,13 +18,15 @@
 /* style */
 body {
     margin: 0;
+    padding: 20px;
     background-color: #eee;
     font-family: 'Apoqa Han Sans';
 }
 
 #app {
-    margin: 20px;
+    margin: 0 auto;
 
+    max-width: 520px;
     padding: 0;
     background-color: #fff;
     border: 1px solid #C4C4C4;
@@ -33,6 +35,7 @@ body {
 }
 
 #header {
+    position: relative;
     padding: 0;
     border-bottom: 1px solid #c4c4c4;
 }
@@ -50,8 +53,8 @@ body {
 
 .btn__close {
     position: absolute;
-    top: 42px;
-    right: 44px;
+    top: 22px;
+    right: 20px;
     width: 16px;
     height: 16px;
     background-image: url('./img/close.png');
